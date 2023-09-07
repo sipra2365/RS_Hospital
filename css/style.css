@@ -240,14 +240,16 @@ button {
 }
 .logo {
     width: 15%;
-    float: left;
+    justify-content: center;
 }
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #0cd268;
 }
 .logo_main {
     position: relative;
-    top: 20px;
+    width: 100px;
+    display: block;
+    float: right;
     z-index: 1;
 }
 .banner_section{
@@ -789,7 +791,7 @@ button {
 }
 .padding_bottom_0{
      padding-bottom: 90px; }
-}
+
 
 @media (min-width: 768px) {
 
