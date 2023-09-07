@@ -247,7 +247,9 @@ button {
 }
 .logo_main {
     position: relative;
+    height: 50px;
     width: 100px;
+    padding: 10px;
     display: block;
     float: right;
     z-index: 1;
