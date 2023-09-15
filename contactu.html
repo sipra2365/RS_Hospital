@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us - Hospital</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXROcdGNh6kJEMf3v0n_Hcc8z9H5xZmbN8qg&usqp=CAU'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
         }
 
         .container {
-            max-width: 600px;
-            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
             padding: 20px;
+            margin: 50px auto;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
-        h2 {
+        h1 {
             text-align: center;
+            margin: 0;
+            padding: 0 0 20px;
+            font-size: 22px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
         }
 
         label {
-            display: block;
             font-weight: bold;
-            margin-bottom: 5px;
         }
 
         input[type="text"],
         input[type="email"],
         textarea {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 0;
             border: 1px solid #ccc;
             border-radius: 4px;
         }
@@ -39,34 +49,39 @@
             height: 150px;
         }
 
-        button[type="submit"] {
+        .btn-submit {
             background-color: #007BFF;
             color: #fff;
-            padding: 10px 20px;
             border: none;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 5px;
             cursor: pointer;
         }
 
-        button[type="submit"]:hover {
+        .btn-submit:hover {
             background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Your Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Submit</button>
+        <h1>Contact Us</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn-submit" value="Submit">
+            </div>
         </form>
     </div>
 </body>
