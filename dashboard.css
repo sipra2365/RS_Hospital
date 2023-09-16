@@ -84,6 +84,8 @@ body{
     position: absolute;
     right: 0;
     margin: 10px 30px;
+    color: rgba(110, 109, 109);
+    cursor: pointer;
 }
 
 
@@ -115,6 +117,7 @@ body{
 .user--info {
    display: flex;
    align-items: center;
+   float: right;
    gap: 1rem;
 }
 
