@@ -1,6 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <style>
+        .sub-nav{
+          display:none;
+          position:absolute;
+          background-color: cornsilk;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2)
+          whitesmoke;
+          z-index: 1;
+        }
+        .nav-item:hover .sub-nav{
+          display: block;
+        }
+        .sub-nav  a{
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        .image-container{
+          text-align: center;/*center the image horizontally*/
+          margin-top: 80px;/*adjust the margin as need for spacing*/
+        }
+        .image-container img{
+          max-width: 100%;/*ensure the image fits within the container*/
+          height: 300px;/*maintain the aspect ratio of the image*/
+        }
+        .inner_matter{
+          text-align: center;
+          margin: 0 auto;
+          max-width: 100px;
+        }
+        strong{
+          font-weight: bold;
+        }
+        .inner_matter p{
+          font-family: "Open Sans",helvetica,sans-serif;
+          font-size: 14px;
+          color: #0343bb;
+          text-decoration: none;
+          clear: both;
+          line-height: 20px;
+          margin-bottom: 15px;
+        }
+        .logo{
+          max-width: 5%;
+          height: 5%;
+          border-radius: 2px solid #333;
+        }
+      </style>
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +60,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Contact</title>
+      <title>NEW DAYS</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -35,148 +87,122 @@
         <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo"></div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <a class="logo_main" href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a>
+            <div class="logo"><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a></div>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.html">About us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctor.html">Patient</a>
+                <a class="nav-link" href="doctor.html">Patients</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="depatments.html">Depatments</a>
+                <a class="nav-link" href="depatments.html">Department</a>
+                <ul class="sub-nav">
+                  <li><a href="Cardiology.html">Cardiology</a>
+                  </li>
+                  <li><a href="Dermatology.html">Dermatogy</a>
+                 </li>
+                 <li><a href="Neurology.html">Neurology</a>
+                </li>
+                <li><a href="Urology.html">Urology</a>
+                </li>
+                <li><a href="Oncology.html">Oncology</a>
+                </li>
+                <li><a href="Plastic Surgery.html">Plastic Surgery</a>
+                </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Academic</a>
+                <a class="nav-link" href="contact.html">Academic</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="doctor.html">Contact us</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="login.html">LOGIN</a>
-              </li>              
             </ul>
           </div>
-        </nav>
-        <nav class="mobile_header navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a></div>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent2">
-            <a class="logo_main" href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a>
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="doctor.html">Doctor</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="depatments.html">Depatments</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="login.html">LOGIN</a>
-              </li>              
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <!-- header section end -->
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h1 class="contact_text">Contact Us</h1>
-                <form action="#">
-                  <div class="form-group">
-                    <input type="text" class="email-bt" placeholder="Name" name="Name">
+
+          <!--menu_area_start-->
+            
+            
+            <!--banner-->
+            <div class="image-container">
+            <div class="banner_area">
+              <div class="slider-wrapper theme-default">
+                  <div id="slider" class="nivoslider">
+                   <img src="https://static.vecteezy.com/system/resources/thumbnails/006/878/392/small/cardiology-concept-banner-wireframe-low-poly-style-red-heart-abstract-modern-3d-illustration-on-dark-blue-background-vector.jpg" width="100%" hight="100%" alt="image description"/>
                   </div>
-                  <div class="form-group">
-                    <input type="text" class="email-bt" placeholder="Email" name="Email">
-                  </div>
-                  <div class="form-group">
-                    <input type="text" class="email-bt" placeholder="Subject" name="Email">
-                  </div>
-                    <div class="form-group">
-                      <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
-                    </div>
-                  </form>
-                  <div class="main_bt"><a href="#">Send</a></div>
-              </div>
-            <div class="col-md-6">
-              <h1 class="contact_text">About our Doctor's</h1>
-              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <h2 class="selfideno_text">Doctorself</h2>
-                    <div class="client_main">
-                      <div class="image-5"><img src="images/img-5.png"></div>
-                      <p class="lorem_ipsum_text">
-                        Doctors are considered the most important and responsible people in society. They are the ones who support when someone is struggling with their health. Doctors are the ones to have a profound knowledge of all kinds of diseases, their symptoms, and their treatments. </p>
-                      <div class="quote_icon"><img src="images/quote-icon.png"></div>
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <h2 class="selfideno_text">Doctorself</h2>
-                    <div class="client_main">
-                      <div class="image_5"><img src="images/img-5.png"></div>
-                      <p class="lorem_ipsum_text">
-                        A doctor is someone who is experienced and certified to practice medicine to help maintain or restore physical and mental health. A doctor is tasked with interacting with patients, diagnosing medical problems and successfully treating illness or injury.</p>
-                      <div class="quote_icon"><img src="images/quote-icon.png"></div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!-- contact section end -->
-      <!-- appointment section start -->
-      <div class="appointment_section">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h3 class="need_text">Need a doctor for check-Up </h3>
-              <h1 class="make_text">Make An Appointment & You're Done </h1>
+            
+  <!--banner-->
+
+  <!--inner_matter_start-->
+            <div class="--inner_matter_start--">
+
+
+                 <h1>Cardiology Department</h1>
+                 <p>
+                    <a href="index.html">HOME</a>
+                    >
+                    <a href="about.htnl">ABOUT US</a>
+                    >
+                    <a href="doctor.html">PATIENT</a>
+                    >
+                    <a href="depatments.html">DEPARTMENTS</a>
+                    >
+                    <a href="Cardiology.html">CARDIOLOGY</a>
+                    >
+                    <section class="ac-container">
+                 </p>
             </div>
-            <div class="col-md-6">
-              <div class="appointment_bt_main">
-                <div class="appointment_bt"><a href="appointment.html">Get Appointment</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- appointment section end -->
-      <!-- footer section start -->
+
+            <p>
+              An excellent team of dedicated cardiologists, cardiothoracic surgeons, anaesthetists, perfusionists, nursing and other paramedical staff make cardiac care complete and affordable at Peerless Hospital.
+               <br /><br />
+               We have dedicated cath lab, modular operation theatres, 30 bedded modular ICCU, ITU, 6 bedded CTVS ITU, cardiac step down ward to ensure safe treatment and finally ambulances for comfortable transportation.
+               
+               <br /><br />
+               
+               <p>CARDIAC PROCEDURES & SURGERIES</p>
+               
+               
+               <ul>
+               <li>Closed Heart Surgeries</li>
+               <li>MICS - Minimally Invasive Cardiac Surgery ( A form of bypass surgery )</li>
+               <li>Open Heart Surgeries: CABG, including off pump, combined procedures (Valve replacement and repair with CABG)</li>
+               <li>Total Arterial Grafting for CABG (LIMA / RIMA / RGEA)</li>
+               <li>Re-do Cardiac Surgery</li>
+               <li>Valvular and congenital heart diseases</li>
+               <li>Beating heart surgery (off  pump)</li>
+               <li>Vascular surgeries including grafting </li>
+               <li>Thoracic surgeries of all types</li>
+               <li>Coronary angiogram (CAG)</li>
+               <li>Coronary angioplasty (PTCA)</li>
+               <li>Peripheral Angiogram, Angioplasty</li>
+               <li>Stenting of arteries - carotid, cerebral, renal, visceral, femoral etc. Balloon Aortic / Mitral / Pulmonary Valvuloplasty</li><li>Embolotherapy for visceral bleeding </li>                                     
+               
+               </ul>
+               
+               
+                <p>FOR POST-SURGICAL FOLLOW-UP SUPPORT</p>
+               <ul>
+               <li>ECG</li>
+               <li>Holter</li>
+               <li> Ecocardiograph (Colour doppler) and other relevant investigations</li>
+               <li>Physical Medicine and Rehabilitation</li>                           
+               <li>Blood sample collection from home</li>   
+               <li>Cardiac CT Scan to monitor recovery progress</li>                                   
+               </ul>
+            </p>
+            
+
+        <!-- footer section start -->
       <!-- info section -->
     <div class="info_section layout_padding">
       <div class="container ">
@@ -396,24 +422,4 @@
     </div>
     <!-- end info section -->
     <!-- footer section end -->
-    <!-- copyright section start -->
-    <div class="copyright_section">
-      <div class="container">
-        <p class="copyright">2023 All Rights Reserved.</p>
-      </div>
-    </div>
-    <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <!-- javascript --> 
-      <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-   </body>
-   </html>
+    
