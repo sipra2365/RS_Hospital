@@ -3,45 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vaccination Appointment Form</title>
+    <title>Vaccination Form</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('data:image/jpeg;base64,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');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .container {
-            max-width: 600px;
+            max-width: 500px;
             margin: 0 auto;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin-top: 50px;
         }
 
-        h2 {
+        h1 {
             text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
         }
 
         label {
             display: block;
             font-weight: bold;
-            margin-bottom: 5px;
         }
 
         input[type="text"],
         input[type="email"],
-        input[type="tel"],
         select {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
+            padding: 0;
             border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 5px;
         }
 
         button[type="submit"] {
-            background-color: #007BFF;
+            background-color: #007bff;
             color: #fff;
-            padding: 10px 20px;
             border: none;
-            border-radius: 4px;
+            padding: 10px 10px;
+            border-radius: 5px;
             cursor: pointer;
         }
 
@@ -52,31 +62,29 @@
 </head>
 <body>
     <div class="container">
-        <h2>Vaccination Appointment Form</h2>
-        <form action="#" method="post">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required>
-
-            <label for="age">Age:</label>
-            <input type="text" id="age" name="age" required>
-
-            <label for="vaccine">Select Vaccine:</label>
-            <select id="vaccine" name="vaccine" required>
-                <option value="pfizer">Polio</option>
-                <option value="moderna">Covaxin</option>
-                <option value="johnson">Johnson & Johnson</option>
-                <option value="astrazeneca">AstraZeneca</option>
-            </select>
-
-            <label for="date">Preferred Date:</label>
-            <input type="date" id="date" name="date" required>
-
+        <h1>Vaccination Form</h1>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="vaccine">Vaccine Type:</label>
+                <select id="vaccine" name="vaccine">
+                    <option value="polio">Polio</option>
+                    <option value="Covaxin">Covaxin</option>
+                    <option value="johnson">Johnson & Johnson</option>
+                    <option value="Covishield">Covishield</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Vaccination Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
             <button type="submit">Submit</button>
         </form>
     </div>

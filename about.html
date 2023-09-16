@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <style>
+        .sub-nav{
+          display: none;
+          position: absolute;
+          background-color:#f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        .nav-item:hover .sub-nav{
+          display: block;
+        }
+        .sub-nav a{
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+      </style>
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +29,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>About</title>
+      <title>NEW DAYS</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -35,39 +56,53 @@
         <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo"></div>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="logo_main" href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a>
             <ul class="navbar-nav mr-auto">
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="about.html">About us</a>
+
+                <ul class="sub-nav">
+                  <li><a href="team.html">Overview</a> </li>
+                  <li><a href="bod.html">Board of directors</a> </li>
+                  <li><a href="vandm.html">Mission and vission</a> </li>
+                  <li><a href="csr.html">CSR policy</a> </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctor.html">Doctor</a>
+                <a class="nav-link" href="doctor.html">Patients</a>
+                <ul class="sub-nav">
+                  <li><a href="pg.html">Patient guide</a> </li>
+                  <li><a href="package.html">Packages</a> </li>
+                  <li><a href="insurance.html">Insurance</a> </li>
+                  <li><a href="international.html">International patient</a> </li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="logo_main" href="index.html"><img src="images/logo.png"></a>
+                <a class="nav-link" href="depatments.html">Department</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="depatments.html">Depatments</a>
+                <a class="nav-link" href="blog.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="contact.html">Academic</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Contact us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">LOGIN</a>
+                <a class="nav-link" href="login.html">Login</a>
               </li>              
-            </ul>
+            </ul>5
           </div>
         </nav>
         <nav class="mobile_header navbar navbar-expand-lg navbar-light bg-light">
-          <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+          <div class="logo"><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a></div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -77,28 +112,31 @@
                 <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
+                <a class="nav-link" href="about.html">About us</a>
               <li class="nav-item">
-                <a class="nav-link" href="doctor.html">Doctor</a>
+                <a class="nav-link" href="doctor.html">Patients</a>
               </li>
               <li class="nav-item">
                 <a class="logo_main" href="index.html"><img src="images/logo.png"></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="depatments.html">Depatments</a>
+                <a class="nav-link" href="depatments.html">Department</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="blog.html">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="contact.html">Academic</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"><img src="images/search-icon.png"></a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">Contact us</a>
+              </li>
+
               <li class="nav-item active">
-                <a class="nav-link" href="#">LOGIN</a>
+                <a class="nav-link" href="#">Login</a>
               </li>              
             </ul>
           </div>
