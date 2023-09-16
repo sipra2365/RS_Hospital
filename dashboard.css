@@ -67,16 +67,13 @@ body{
     left: 0;
     width: 100%;
 }
-<<<<<<< HEAD
 /* Main section */
 .main {
     position: relative;
     padding: 20px;
-=======
-/* **** main body section **** */
+}
 .main--container {
     position: relative;
->>>>>>> b4ef946947bfa72dce822750b887aaae241ae08e
     width: 100%;
 }
 .main-top {
