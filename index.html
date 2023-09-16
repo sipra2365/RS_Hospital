@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <style>
+        .sub-nav{
+          display:none;
+          position:absolute;
+          background:#f9f9f9;
+          min-width:160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        .nav-item:hover .sub-nav{
+          display:  block;
+        }
+        .sub-nav a{
+          float: none;
+          color:black;
+          padding:12px 16px;
+          text-decoration:none;
+          display:block;
+          text-align:left;
+        }
+      </style>
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -52,9 +73,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="blog.html">Services</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item"> 
                 <a class="nav-link" href="contact.html">Academic</a>
-              </li>
+                <ul class="sub-nav">
+                  <li><a href="medical.html">medical</a> </li>
+                  <li><a href="nursing.html">nursing</a> </li>
+                  <li><a href="paramedical.html">paramedical</a> </li>
+                  <li><a href="hospital administration.html">hospital administration</a> </li>
+                </ul>
               <li class="nav-item">
                 <a class="nav-link" href="doctor.html">Contact us</a>
               </li>
