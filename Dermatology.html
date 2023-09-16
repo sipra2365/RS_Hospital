@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <style>
+        .sub-nav{
+          display:none;
+          position:absolute;
+          background-color: cornsilk;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2)
+          whitesmoke;
+          z-index: 1;
+        }
+        .nav-item:hover .sub-nav{
+          display: block;
+        }
+        .sub-nav  a{
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        .image-container{
+          text-align: center;/*center the image horizontally*/
+          margin-top: 80px;/*adjust the margin as need for spacing*/
+        }
+        .image-container img{
+          max-width: 100%;/*ensure the image fits within the container*/
+          height: 150px;/*maintain the aspect ratio of the image*/
+        }
+        .inner_matter{
+          text-align: center;
+          margin: 0 auto;
+          max-width: 100px;
+        }
+        strong{
+          font-weight: bold;
+        }
+        .inner_matter_right_area p{
+          font-family: "Open Sans",Helvetica,sans-serif;
+          font-size: 14px;
+          color: #0343bb;
+          text-decoration: none;
+          clear: both;
+          line-height: 20px;
+          margin-bottom: 15px;
+        }
+        .logo{
+          max-width: 5%;
+          height: 5%;
+          border-radius: 2px solid #040303;
+        }
+      </style>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>NEW DAYS</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    </head>
+    <body>
+      <!-- header section start -->
+      <div class="header_section">
+        <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="logo"><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a></div>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">Patients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">Department</a>
+                <ul class="sub-nav">
+                  <li><a href="Cardiology.html">Cardiology</a>
+                  </li>
+                  <li><a href="Dermatology.html">Dermatogy</a>
+                 </li>
+                 <li><a href="Neurology.html">Neurology</a>
+                </li>
+                <li><a href="Urology.html">Urology</a>
+                </li>
+                <li><a href="Oncology.html">Oncology</a>
+                </li>
+                <li><a href="Plastic Surgery.html">Plastic Surgery</a>
+                </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Academic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--menu_area_start-->
+            
+            
+            <!--banner-->
+            <div class="image-container">
+            <div class="banner_area">
+              <div class="slider-wrapper theme-default">
+                  <div id="slider" class="nivoslider">
+                   <div class="p_img" ><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhITEhIVFRUVFQ8VFRUQEBIVFRUVFRUWFhUVFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFRAQGi0dHSUtLS8tLS0tKy0tLystLS0rLS0tLy0rKy0tLS0tLS0tLS0tLS0tKy0tKy0rLSstLS0tK//AABEIAH4BkAMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAABAIDBQYBBwj/xAA6EAACAgECBAQDBAgHAQEAAAAAAQIDEQQhBRIxQQZRYXETIoEyobHBBxRCUnKR0fAVIyQzYqLhshf/xAAaAQADAQEBAQAAAAAAAAAAAAAAAgMBBAUG/8QAIxEBAQADAAICAQUBAAAAAAAAAAECAxESIQQxQRMiI1Fh8P/aAAwDAQACEQMRAD8A+eAAHA+iAAAAAAAAAAAAAAAAAAHpJESSBicSyJWiyJpauiXQKIDNURonkYpiNJ4KIE8jxDJbF5LL4fJL2ZGiJdrtq37FI58iH6MIL/Ec+ULcfzR9uiz4Z+jGzHEV6wtX4H3Cthr+ibfszFl0SiJdEs5qtRMriTRrE8ly7FBbncGOQ8X2Z1MV+7VD/tOefwRmQkMeK7P9ZP0hSvub/MQjM8jdf35PX0z+PE7Bhr+IQordk3hL735FNUzgfFevs1uoWnoTcYNx26OX7Tb8kGE6MqzuPeJrLpPMsJ5wlnZdkkHCPDN12JTTrh5zT5n7R/qdj4a8H1afFluLLPNr5Y/wo0OLcQUenXskVuzk5iWYeV7WHpuFVaZfLHfze8mx2ipveWI+84Z+5mpwvSxhF3XNJpOTcsJVx6/TY57V+LLNbbLTcPrhjd/Fvly/EUcOSqhjrjfft2Ex13I+WzHBp/qOem/sThpHEzfD2o1UrHGyqFcFKUebduTWflh+96yfc6/9X5kHj+G2k9HqXHubFHEfMy7dNgVnZgXvG8ldZTqlIaUUcfpta0adfGMLcMc/7Llr/psyLKbuzMynW8+Mdy6bZbXn45So7NfljYt1tqwcP4i3TNnV6857iEnI6N27Hxsjl1ab5S1zD0xB0dPobUqCqWnOHrv44YAAs7QAAAAAAAAAAAAAAAAAB6SRE9QMTRZEqRZE0tMQYxCwUgi6ERonkchYMVIUqiOVIeIZHaUg4hYuR+x5WJ8ayoDW8xqPO5Qj4CfJxOrfHN8Rb+qz+R90gfE/AVPPxGp9eWNkt/bH5n26KN03uKe+cyXRLYsqiTRdzVdFk0ypMkmaVZkt5txfJOU13BjhvFT/ANZb/DT/APJnxmaXjSONTGXadUP+spJ/ijIjM8jf62ZPY0e9eI4nq3XVJx3k1iK85PZFPhrhUdPDL3nLeUvXuXS3x6PP17E3cJL6PxdrtdhHMV6nnsdkmlCGXv0bX9/cyzi+peGsnG8X1tk4/Dryo98d/Qprx8qM8phDHifxDZq5/DhJxpTx3w35t7f2zW8MaGcHW4zXyWQknDZJxWOSGW23L5m/4pP0MzgumnyfDhBYlhzcltJ4xlpnccH4V077JZwkor92CWy+h03bjhPHFyTTc8vLOtfQU7x9Mt99/wA9/wAzoKathXQ6XCNSqJCX0tl7pTU0HM8U2lg7GxbHI+J6XH50tl1x5eYmUPh9qaImfxrikoSVVMPiWbOWXiMF/wAu7b8kWaTiEH+0n6Ldv6If4Lwxtuco45m289XnzFxnVMvX21vDcGoqUvtY6eXsbtkcimkoURfiXFOXaLXuP+EpjcsvTE11bjOSfmI2Rya9sZXVwtxlvOcd1l4ZlWRae6x7mWl5y2F5VEHVuMgkY18sAALu0AAAAAAAAAAAAAAAAAAekkRJIGJIsiVosiaWroF8SiJbEaJ5Ga2NVMTrGa5DxDI9SyXEqeat+xXSMWT+VlJ7c+RL9FdL/XrHL9mt4+r/APD7JGR8p8ESUNY/+cZL+TPqFczdc5E9t7em1IlkpiyeSqFXqRJSKUiefQ0q5Mui+m66d0JqRdGeyBjjv0iWYu0y23ru6LH7UTAhM1f0oTxZpH5x1C++tnO0XHk/Jn8tex8X3qx/78tBSITjkrV8V1aXuxnT2Rl0afs0SU/LMu4Y7GW6XwvBdVnzN+hIdhgaZMrM0XBorsb+l0qWNiuuaGY3IaUl6ahDBZkV+OefGG7GcpiTE76VLqWO0g5mdHCkeG1p5UUvZDFccA5mZxjiaqi9930/qbaMcbleDi/FeT5Ivfu/yOT1WtndJ1Vvd5UpdeVd395nX6i3VWclbcYZbnZ3fpH+p1HDdPVRHEGs92u/u3uzeO/DGYRrcDmqvhwzmGYxfontlHVazgcJdkcXoP8AMsil9lNN/TfB9E4dqOaOH1X3rsy+i4+8a8z5+P7plPtyOs8M/u7GRdwiyD6ZPp0oJlFmki+xTL4+F+vTkx35z79vyqAAc73AAAAAAAAAAAAAAAAAAB6SREkgYsii6ECqJdWaWrI1PsTVb8n/ACJ1MeoY0TyK6etyeMG/oeHRWM7lVBp6djxDI1To4+Rf/h8Xtgnp5mlp5lI58mNTwTlshZGLzF7YTOr0qljdY9yEbBiqY8QyMxpb7on8GS6rPsSqY1AdOkVLBYpM0YNHs9PBrL29gKy5SJwnt7Mtenz7FlWlS/8ATWOX8ccCt1kNOqeXmha3JzlhKEoSUn0y91HZFH/51CVLh+sWxsx/uQUVFP8Age7j9U/VHbrC7fyRG3UY7P6Y/DORLrxuXlZ7Um3OY+MvI+F+IPCNkYyonKb1UVOyHK38K+uO7Sbf+5ypyW0U0muqwc3weuyhK2Vka4tKUIufNZan0cKotvl/5S5V5Nn1f9K9/wDpq9TU8Waa6ucWtpdfs+f2lFezl5nyLiHD/wDOs+Hnlc5OO2MRf2V9I4R268tf6dmznE55eX7ft9F4TxVWQjJd/ufdGtDVHE8ErdcIr+99zdqvPm9nJlfH6e9hLcZ37b8dQXQ1BiQuGK7RJk24tiOoLI3GXCwvjYbKWw+rAdomrCXMN0liriXEo1RcpPCR8+1PEZaycsN8n7y6P0X9TuOJcGq1GFanJJ55eZpP+JLqvQ9jwaqKSjBJLoksIfGye1Necxc1p/lioxW3ovyQ9ptNJ9cm3Xw6K6LHsPafSpdjO2ny3/0s8P8AD3H5pd+i8jeqscGmu394EK7MEnqCs9fTjy7lb11Vc00mujWSQjwieak/WWPbLHcnoY3sleblOWx+TAADhfQgAAAAAAAAAAAAAAAAAD0kiKJIGLIl0CmJdA0tNVDtDEKmO0saJ5NOg0aGZmnNKgeIZNPTs0dPIy6WOVyb2SZSOfJoq7C/Auo1KT6rOwhHQ2TabkorsluxvS+H6lvLmm85zOT/AAWw8Qyaf67FPGcv8PcnHiS8xSzgdTziqO+723z55IR8MVv99e1k/wCo6dPS4wl3F58eTlyp5fkuou/C9b/an9bJNDug4NTT9ler9ffzNKb13FqtLQ7tRNQhFpOXrJ4S/mxnQcRrurjZXJSjJJppppp7pp91gxfGGld+jvqjBzlyOUIxWW5w+aKSXdtY+pzvgyNml07pshbDlcuRXxcZYb5sLZZWZMGOx4jxdQ2ju/uXuc9ruLSScp2csV1bfKkX1aWUnmW2fPr/ACPkviB3PV3wtnKbqslFJ9Ix6x5YrZfK1uT2bPCdV06v1MuN3xPxxaqDpg3yuUHOeMcyjulHPrjd+Rm0ULoK6WJp0I87Zuyz+69XVpw1z1DNNQ3XEqqGYIgr1ZAYrRTBDFZnGdWwL4kKy6KN4Xr1E1Ihg8AL1YTVgm5HqsN6Xh6Mi6NhnxtPXePKzjQd5LSRlbNQj1f3Lu2Z+krsulyVxbf3JebfZHbcI4ZGiOOs3jml+S9C2rXc7/iO7ZNc/wBO0VKEYxXSKSJZIORVddhHo8483r8rgAHnvowAAAAAAAAAAAAAAAAAB6iSIokgYnEtgyqJOLNLTVbHaGZ9TH9Ohonk0tOx/S6iLfKpJvyTzj3Mi6L5WvPbC67mhwXRKqOO73bKTnEMm9p4mnpzN05p6dDxz5NPTxNCnCMyqeByFiHiGTQjM9dhnS1Qrbr0k23/AGh061bdQiWlpc9+kfx9jM4RCV8ubDVa7v8Aafp6ep0bmorY0qyqMYrbYS4rZGVb3T3WPR/3krv4jyv7PXozNepjbvHH0fcGIqXRnzXx3KGn4nz2PEL6apZa25o5g/uUT6Ql1X1OU/SlwZajS1W4y6J7+fJPZ/TPKyW7GZYXq/xs/HZHHV8R0ts+SFy5s7JppP2Y9GDi8MnwDhdEYqUa4588bmnfw/nezx7Hk3nfT2J38k6hmEhHeuTjN59V+Y1B56AymoSGK5CkGXQkBT1cy5TEIzLVYDDbkRlMWdpW7gbDE5lbsKJXEY7mDi/4w5o9FKbXM8L7zzR0pb438zWoGnstvHQcEtrrioRio/jJ+bfdmrKZy0WOU6uS9Tv1b5JyuDbotvY1LbcGPrdU5bIL73IVaDZu76jNennuvz6AARe0AAAAAAAAAAAAAAAAAAPSSREkgYmkTiskESTb2Rpaujao+rNCFiXUzK1hlyeRonk19PrIcyT79Gb2mRxlUe3Z/cdFwPW80cPrF4HiGTpdOP1WJGLDUE/1spHPk3v1kplrsPGdjBfEMtRW8nthfmPaTgll0k7ZOMP3YvDfuykQyU8V8QquLcYyseUsVxcnlvCW3Q6Dgfh2cl8TVPLeJKlP5Ye7/afvsa2g4fXCCjCKSWHsjSjIZOpR2WFtjbYX1N00m/L+TRZOYhdqJSlyx+vp7s0pLiUrJwWySec4Rg12Srl8v18jtfgrlSMDiGj5XsgY80/E4v7a5X9xofDhbCUHiUJxcWvR7HPyqye0uUHmLx+ABzP+C2aKyUJzzXl8kn3j238xfifjHT0LClzz7RjuvqzvlrK7o8l8U/JtbHMeJP0d03JzowpdcLo/6HHl8SW9d2Pzcucscvwzi8L3ltZZuV043R8+1/Ar9LN/LJY98G74f8Qc2Ize/qQ2avFfDb5OqUvNEk0eRkmiLgQqqzmPPiFDiHKYaRa7iPO2EIDFdYpvpXCrPUcphglXAvjA2QtyXUMfokI1xGqB4StGDLqxeoYgUTq3B5yHqJo3hK/N4AA70gAAAAAAAAAAAAAAAAAB6SRE9QMWQLc4KoFqNLXkp7nqvPbIZQV6XPcaJ5B6hjnBrWrPRrc9p0ce+4/TBLoh4hke/W/Ld+gKUpdXheSIVwSGIJFI58mpwjTxUk102Z1qvWz8zjKLMdDV02pb2fuvRjxCunp1Q7C046Grkma+j1zx0HTrXvuRGiSXTvuUwlnclKWMGlOO/shbU18yCDZZjYGMO3TtCsoYN62IjqopLOADLnATt17r+zJlfEtY84WxnwhnqAa3+IwuXLfBP1wcxxjwZXN8+nlh9cGzCBdB4MyxlnK3HKy9jC4ZC2tctie3c04zyOt52YjfXys87fpuHv8AD0dG7z9X7EiJ5zAczpWQZfWxeJdAxtOVsbrEqmO0saEq+EBqmsrqG6kPIXq6uJfGJGtFw8Toij1ggGK//9k=" width="100%" height="300%" alt="image description"/>
+                  </div>
+              </div>
+      </div>
+  <!--banner-->
+
+  <!--inner_matter_start-->
+            <div class="--inner_matter_start--">
+
+
+                 <h1>Dermatology Department</h1>
+                 <p>
+                    <a href="index.html">HOME</a>
+                    >
+                    <a href="about.htnl">ABOUT US</a>
+                    >
+                    <a href="doctor.html">PATIENT</a>
+                    >
+                    <a href="depatments.html">DEPARTMENTS</a>
+                    >
+                    <a href="Cardiology.html">CARDIOLOGY</a>
+                    >
+                    <a href="Dermatology.html">DERMATOLOGY</a>
+                    <section class="ac-container">
+                 </p>
+            </div>
+
+            <p>
+                The Dermatology department treats diseases of the skin & diverse cases like skin rashes due to infections, ringworms, scaly patches due to bacterial infections, fungal infections and sexually transmitted diseases.  
+<br />
+Our focus is on both common as well as uncommon cases for providing respite from such ailments.
+<br />
+It provides facilities for:
+</p>
+
+
+<div class="box_one">
+    <div class="table_one">
+    <b>Dexamethasone-cyclophosphamide pulse therapy (DCP):</b>
+    This is a curative treatment for fatal diseases like Pemphigus, Bullous Pemphigoid and other bullous disorders.</div>
+    <div class="table_two">
+    <b>Phototherapy</b>
+    PUVA therapy and NB – UVB for treatment of Vitiligo & various other skin disorders. Excellent results are obtained from PUVA therapy and NB – UVB (Narrow band ultraviolet B)
+    </div>
+</div>
+                        
+<b>Dermatosurgical Procedures</b>
+                        
+                                                        
+<ul>
+    <li>Transplantation of hairs for patients suffering from alopecia </li>
+    <li>Removal of Naevus </li>
+    <li>Removal of Cysts, other skin lesions </li>
+    <li>Keloid Surgeries </li>
+    <li>Scar revision surgeries </li>  							
+    <li>Punch grafting </li>
+    <li>Electrosurgery</li>  							
+</ul>
+                                
+<b>Cosmetic Dermatological Procedures like:</b>   
+
+<ul>
+<li>Glycolic Peeling</li>
+<li>Botox</li>
+</ul>
+                         
+                            </div>
+                            
+                          <!-- footer section start -->
+      <!-- info section -->
+    <div class="info_section layout_padding">
+        <div class="container ">
+          <div class="info_content">
+                <div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <h5>
+                    Medical Care
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About Departments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ml-3 ml-md-5">
+                    <li>
+                      <a href="">
+                        Cancer Oncology
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Dental Surgery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Diagnose & Research
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Drug / Medicines
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <h5>
+                    The Services
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About Departments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ml-3 ml-md-5">
+                    <li>
+                      <a href="">
+                        Cancer Oncology
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Dental Surgery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Diagnose & Research
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Drug / Medicines
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <h5>
+                    Departments
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About Departments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ml-3 ml-md-5">
+                    <li>
+                      <a href="">
+                        Cancer Oncology
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Dental Surgery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Diagnose & Research
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Drug / Medicines
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+            <div class="social-box">
+              <a href="">
+                <img src="images/fb-icon.png" alt="" />
+              </a>
+  
+              <a href="">
+                <img src="images/twitter-icon.png" alt="" />
+              </a>
+              <a href="">
+                <img src="images/linkedin-icon.png" alt="" />
+              </a>
+              <a href="">
+                <img src="images/instagram-icon.png" alt="" />
+              </a>
+            </div>
+            <div class="form_container mt-5">
+              <form action="">
+                <label for="subscribeMail">
+                  Newsletter
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter Your email"
+                  id="subscribeMail"
+                />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- end info section -->
+      <!-- footer section end -->
+
+            </div>
+        </nav>
+      </div>
+    </body>
+</html>
+                        
