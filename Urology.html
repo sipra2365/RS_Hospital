@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <style>
+        .sub-nav{
+          display:none;
+          position:absolute;
+          background-color: cornsilk;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2)
+          whitesmoke;
+          z-index: 1;
+        }
+        .nav-item:hover .sub-nav{
+          display: block;
+        }
+        .sub-nav  a{
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+        .image-container{
+          text-align: center;/*center the image horizontally*/
+          margin-top: 80px;/*adjust the margin as need for spacing*/
+        }
+        .image-container img{
+          max-width: 100%;/*ensure the image fits within the container*/
+          height: 150px;/*maintain the aspect ratio of the image*/
+        }
+        .inner_matter{
+          text-align: center;
+          margin: 0 auto;
+          max-width: 1000px;
+        }
+        strong{
+          font-weight: bold;
+        }
+        .inner_matter_right_area p{
+          font-family: "Open Sans",Helvetica,sans-serif;
+          font-size: 14px;
+          color: #0343bb;
+          text-decoration: none;
+          clear: both;
+          line-height: 20px;
+          margin-bottom: 15px;
+        }
+        .logo{
+          max-width: 5%;
+          height: 5%;
+          border-radius: 2px solid #040303;
+        }
+      </style>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>NEW DAYS</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    </head>
+    <body>
+      <!-- header section start -->
+      <div class="header_section">
+        <nav class="destop_header navbar navbar-expand-lg navbar-light bg-light">
+          <div class="logo"></div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="logo"><a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Pl8L7uP2FLyQyNTz8EQGDPAUeJ-Is0QO98L-b7ZjpUEPxN1HCJD4jcOHZ0By0mPHkAE&usqp=CAU"></a></div>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">Patients</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="depatments.html">Department</a>
+                <ul class="sub-nav">
+                  <li><a href="Cardiology.html">Cardiology</a>
+                  </li>
+                  <li><a href="Dermatology.html">Dermatogy</a>
+                 </li>
+                 <li><a href="Neurology.html">Neurology</a>
+                </li>
+                <li><a href="Urology.html">Urology</a>
+                </li>
+                <li><a href="Oncology.html">Oncology</a>
+                </li>
+                <li><a href="Plastic Surgery.html">Plastic Surgery</a>
+                </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Academic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!--menu_area_start-->
+            
+            
+            <!--banner-->
+            <div class="image-container">
+            <div class="banner_area">
+              <div class="slider-wrapper theme-default">
+                  <div id="slider" class="nivoslider">
+                   <div class="p_img" ><img src="data:image/jpeg;base64,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" width="70%" height="100%" alt="image description"/>
+                  </div>
+              </div>
+      </div>
+  <!--banner-->
+
+  <!--inner_matter_start-->
+            <div class="--inner_matter_start--">
+
+
+                 <h1>Urology Department</h1>
+                 <p>
+                    <a href="index.html">HOME</a>
+                    >
+                    <a href="about.htnl">ABOUT US</a>
+                    >
+                    <a href="doctor.html">PATIENT</a>
+                    >
+                    <a href="depatments.html">DEPARTMENTS</a>
+                    >
+                    <a href="Cardiology.html">CARDIOLOGY</a>
+                    >
+                    <a href="Dermatology.html">DERMATOLOGY</a>
+                    >
+                    <a href="Neurology.html">NEUROLOGY</a>
+                    >
+                    <a href="Urology.html">UROLOGY</a>
+                    <section class="ac-container">
+                 </p>
+            </div>
+
+            <p>
+                Since 1994 the department has performed a wide variety of urological surgeries-emergency, elective, minimally invasive, adult and paediatric and for benign and malignant conditions. 
+                <br /><br />
+                
+                Routinely performed urological procedures consist of treatment of benign and malignant prostate tumours (TURP, Open and Radical prostatectomies), bladder tumours (TURBT, Radical Cystectomies), urethral stricture disease (urethrotomy and urethroplasty including PAPA urethroplasty for PFUDD), simple and radical nephrectomies, endoscopic treatment of bladder and ureteric calculi, laparoscopic orchidopexy, pyeloplasty for PUJO and hypospadias operations. 
+                <br /><br />
+                
+                Also performed surgeries include, ureteric reimplantation, repair of Vesico Vaginal Fistula, TVT for stress incontinence, laparoscopic adrenalectomy, surgery for PUV with paediatric endoscope. ESWL for treatment of kidney stone disease is expected in the near future.<br /><br />
+                PCNL for kidney stone and URS & lithoclast for ureteric stone are performed regularly.
+                
+                                                </p>
+                                                   
+                                            </div>
+    
+                     <!-- footer section start -->
+      <!-- info section -->
+    <div class="info_section layout_padding">
+        <div class="container ">
+          <div class="info_content">
+                <div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <h5>
+                    Medical Care
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About Departments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ml-3 ml-md-5">
+                    <li>
+                      <a href="">
+                        Cancer Oncology
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Dental Surgery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Diagnose & Research
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Drug / Medicines
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <h5>
+                    The Services
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About Departments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ml-3 ml-md-5">
+                    <li>
+                      <a href="">
+                        Cancer Oncology
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Dental Surgery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Diagnose & Research
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Drug / Medicines
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <h5>
+                    Departments
+                  </h5>
+                </div>
+                <div class="d-flex ">
+                  <ul>
+                    <li>
+                      <a href="">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        About Departments
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Services
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Contact Us
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="ml-3 ml-md-5">
+                    <li>
+                      <a href="">
+                        Cancer Oncology
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Dental Surgery
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Diagnose & Research
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        Drug / Medicines
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+            <div class="social-box">
+              <a href="">
+                <img src="images/fb-icon.png" alt="" />
+              </a>
+  
+              <a href="">
+                <img src="images/twitter-icon.png" alt="" />
+              </a>
+              <a href="">
+                <img src="images/linkedin-icon.png" alt="" />
+              </a>
+              <a href="">
+                <img src="images/instagram-icon.png" alt="" />
+              </a>
+            </div>
+            <div class="form_container mt-5">
+              <form action="">
+                <label for="subscribeMail">
+                  Newsletter
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter Your email"
+                  id="subscribeMail"
+                />
+                <button type="submit">
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- end info section -->
+      <!-- footer section end -->
+            
+            </div>
+        </nav>
+      </div>
+    </body>
+</html>
+            
+            
+
+                
+                            
+                         
+                        
