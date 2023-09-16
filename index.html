@@ -1,6 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+      <style>
+        .sub-nav{
+          display: none;
+          position: absolute;
+          background-color:#f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        .nav-item:hover .sub-nav{
+          display: block;
+        }
+        .sub-nav a{
+          float: none;
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+      </style>
       <!-- basic -->
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -42,9 +63,22 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About us</a>
+
+                <ul class="sub-nav">
+                  <li><a href="team.html">Overview</a> </li>
+                  <li><a href="board.html">Board of directors</a> </li>
+                  <li><a href="mission.html">Mission and vission</a> </li>
+                  <li><a href="CSR.html">CSR policy</a> </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="doctor.html">Patients</a>
+                <ul class="sub-nav">
+                  <li><a href="pg.html">Patient guide</a> </li>
+                  <li><a href="package.html">Packages</a> </li>
+                  <li><a href="insurance.html">Insurance</a> </li>
+                  <li><a href="international.html">International patient</a> </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="depatments.html">Department</a>
@@ -79,7 +113,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">About us</a>
-              </li>
               <li class="nav-item">
                 <a class="nav-link" href="doctor.html">Patients</a>
               </li>
@@ -354,6 +387,7 @@
                     <a href="">
                       About Us
                     </a>
+
                   </li>
                   <li>
                     <a href="">
@@ -412,6 +446,7 @@
                     <a href="">
                       About Us
                     </a>
+                    
                   </li>
                   <li>
                     <a href="">
