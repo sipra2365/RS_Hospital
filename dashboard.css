@@ -68,9 +68,8 @@ body{
     width: 100%;
 }
 /* **** main body section **** */
-.main--content {
+.main--container {
     position: relative;
-    background: #ebe9e9;
     width: 100%;
     padding: 1rem;
 }
@@ -87,7 +86,7 @@ body{
     flex-wrap: wrap;
     background: #fff;
     border-radius: 10px;
-    padding: 10px 2ren;
+    padding: 10px 2rem;
     margin-bottom: 1rem;
 }
 .header--title {
